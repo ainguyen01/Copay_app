@@ -22,7 +22,7 @@
 
       <% @copays.sort {|a,b| a.name <=> b.name }.each do |copay| %>
       <tr>
-        <td> <a href="/copays/<%=copay.id%>"> <%= copay.name %></a></td>
+        <td> <a href="<%=copay.url%>"> <%= copay.name %></a></td>
 
         <td><%= copay.pay_as_little_as %></td>
         <td><%= copay.max_saving %></td>
